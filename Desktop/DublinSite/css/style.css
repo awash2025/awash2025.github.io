@@ -1,0 +1,106 @@
+/* Hides the element with id "skip" by moving it far to the left */
+#skip {
+    position: absolute;
+    left: -500px;
+}
+
+/* When element with id "skip" is focused, moves it to the right */
+#skip:focus {
+    left: 100px;    
+}
+
+/* Styles for headings (h1) */
+h1 {
+    font-size: 80px; /* Sets the font size of h1 elements to 99 pixels */
+}
+
+/* Styles for anchor (link) elements */
+a {
+    color: #000; /* Sets the text color of anchor elements to black */
+    text-decoration: none; /* Removes the underline from anchor elements */
+}
+  
+/* Styles for anchor elements on hover */
+a:hover {
+    text-decoration: underline; /* Underlines anchor elements on hover */
+}
+
+/* Styles for the body of the document */
+body {
+    background-color: rgb(199, 240, 205); /* Sets the background color */
+    font-family: 'Lexend Deca', sans-serif; /* Sets the font family */
+    width: 800px; /* Sets the width of the body */
+    margin: auto; /* Centers the body horizontally */
+    color: #054337; /* Sets the text color */
+}
+
+/* Styles for the navigation bar */
+nav {
+    background-color: #ffffff; /* Sets the background color of the navigation bar */
+    overflow: hidden; /* Ensures that content does not overflow */
+}
+  
+/* Styles for navigation links */
+nav a {
+    float: left; /* Aligns the links horizontally */
+    color: #054337; /* Sets the text color of the links */
+    text-align: center; /* Centers the text within the links */
+    padding: 14px 16px; /* Sets padding for the links */
+    text-decoration: none; /* Removes underline from the links */
+    font-size: 17px; /* Sets the font size of the links */
+    font-family:'Courier New', Courier, monospace; /* Sets the font family */
+}
+  
+/* Styles for navigation links on hover */
+nav a:hover {
+    background-color: #ddd; /* Sets background color on hover */
+    color: black; /* Sets text color on hover */
+}
+  
+/* Styles for active/current navigation link */
+nav a.active {
+    background-color: #979b99; /* Sets background color */
+    color: white; /* Sets text color */
+}
+
+/* Styles for image grid */
+.image-grid {
+    display: grid; /* Creates a grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Sets the number of columns */
+}
+
+/* Styles for images within the image grid */
+.image-grid img {
+    width: 90%; /* Sets the width of the images */
+    border: solid rgb(0, 0, 0) 4px; /* Sets border color and width */
+    border-bottom-right-radius: 30px; /* Adds rounded border radius to bottom right corner */
+}
+
+/* Media query for screen sizes above 776px */
+@media screen and (min-width: 900px) {
+    .blog-gallery {
+        grid-template-columns: 30% 30%; /* Adjusts grid layout for larger screens */
+        grid-gap: 30px; /* Adds gap between grid items */
+    }
+}
+
+/* Media query for screen sizes above 995px */
+@media screen and (min-width: 995px) {
+    .blog-gallery {
+        grid-template-columns: 45% 45%; /* Adjusts grid layout for larger screens */
+        grid-gap: 50px; /* Adds gap between grid items */
+    }
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; /* Add space between rows and columns */
+}
+
+.image-grid img {
+    width: 80%;
+    border: solid rgb(0, 0, 0) 5px;
+    border-bottom-right-radius: 45px;
+}
+
